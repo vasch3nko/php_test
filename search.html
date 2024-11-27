@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск записей по комментариям</title>
+</head>
+<body>
+<h1>Поиск записей по комментариям</h1>
+<form method="POST" action="search.php">
+    <label for="query">Введите текст для поиска:</label><br>
+    <input type="text" id="query" name="query" required minlength="3">
+    <button type="submit">Найти</button>
+</form>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    body {
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    label {
+        font-size: 16px;
+        font-weight: 300;
+    }
+    
+    button {
+        font-size: 16px;
+        font-weight: 700;
+        border: 0;
+        border-radius: 7px;
+        padding: 4px 12px;
+        background: #3095d4;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        background: #1b5578;
+    }
+</style>
+</body>
+</html>
